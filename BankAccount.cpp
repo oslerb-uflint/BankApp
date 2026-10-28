@@ -10,6 +10,7 @@ BankAccount::BankAccount(const std::string &accHolder, const std::string &accNum
 }
 BankAccount::~BankAccount(){
     // cleanup of objects and resources that the object used
+    std::cout<<"Bank Account (ID:" << m_accNum << ") Destroyed\n";
 }
 void BankAccount::deposit(double amount) {
     if (amount > 0) {
